@@ -4,9 +4,11 @@
 			 xmlns:vm="clr-namespace:NugetDepTree.ViewModels"
 			 x:Class="NugetDepTree.Views.MainPage"
 			 x:DataType="vm:MainViewModel">
-
-    <VerticalStackLayout Margin="20">
-        <Label>Hello World :D</Label>
-    </VerticalStackLayout>
-
+	
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Text="Open"
+		             Command="{Binding OpenProjectFileCommand, Mode=OneWay}"
+		             IconImageSource="iconblank.png" />
+	</ContentPage.ToolbarItems>
+	
 </ContentPage>

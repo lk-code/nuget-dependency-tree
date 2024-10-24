@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{E9
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetFileParser", "source\DotNetFileParser\DotNetFileParser.csproj", "{A82F775E-63CD-44BB-940A-294EDC39914A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{46E56FCF-D98B-4F8F-830B-9C568581BD72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46E56FCF-D98B-4F8F-830B-9C568581BD72}.Release|Any CPU.Build.0 = Release|Any CPU
 		{46E56FCF-D98B-4F8F-830B-9C568581BD72}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A82F775E-63CD-44BB-940A-294EDC39914A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A82F775E-63CD-44BB-940A-294EDC39914A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A82F775E-63CD-44BB-940A-294EDC39914A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A82F775E-63CD-44BB-940A-294EDC39914A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
