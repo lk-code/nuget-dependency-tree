@@ -7,13 +7,14 @@
 			 x:Class="NugetDepTree.Views.LocalizationPage"
 			 x:DataType="vm:LocalizationViewModel">
 
-	<VerticalStackLayout Margin="20">
-		<Label>Here are some common ways to use localized text.</Label>
-		<Label>1. As a static resource.</Label>
-		<Label Text="{x:Static strings:AppResources.HelloMessage}" />
-		<Label>2. With a custom MarkupExtension.</Label>
-		<Label Text="{mex:LocString HelloMessage}" />
-		<Label>3. From the ViewModel.</Label>
-		<Label Text="{Binding LocalizedText}" />
-	</VerticalStackLayout>
+    <VerticalStackLayout Margin="20">
+        <Label>Here are some common ways to use localized text.</Label>
+        <Label>1. As a static resource.</Label>
+        <Label Text="{x:Static strings:AppResources.HelloMessage}" />
+        <Label>2. With a custom MarkupExtension.</Label>
+        <Label Text="{mex:LocString HelloMessage}" />
+        <Label>3. From the ViewModel.</Label>
+        <Label Text="{Binding LocalizedText}" />
+    </VerticalStackLayout>
+    
 </ContentPage>

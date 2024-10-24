@@ -5,4 +5,8 @@
 			 x:Class="NugetDepTree.Views.MainPage"
 			 x:DataType="vm:MainViewModel">
 
+    <VerticalStackLayout Margin="20">
+        <Label>Hello World :D</Label>
+    </VerticalStackLayout>
+
 </ContentPage>

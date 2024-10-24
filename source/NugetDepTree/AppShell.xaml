@@ -7,6 +7,31 @@
     xmlns:views="clr-namespace:NugetDepTree.Views"
 	Title="Nuget Dependency Tree">
 
+    <Shell.MenuBarItems>
+
+        <MenuBarItem Text="File">
+            <MenuFlyoutItem Text="Exit" />
+        </MenuBarItem>
+
+        <MenuBarItem Text="Locations">
+            <MenuFlyoutSubItem Text="Change Location">
+                <MenuFlyoutItem Text="Redmond, USA" />
+                <MenuFlyoutItem Text="London, UK" />
+                <MenuFlyoutItem Text="Berlin, DE" />
+            </MenuFlyoutSubItem>
+            <MenuFlyoutSeparator />
+            <MenuFlyoutItem Text="Add Location" />
+            <MenuFlyoutItem Text="Edit Location" />
+            <MenuFlyoutItem Text="Remove Location" />
+        </MenuBarItem>
+
+        <MenuBarItem Text="View">
+            <MenuFlyoutItem Text="Refresh" />
+            <MenuFlyoutItem Text="Change Theme" />
+        </MenuBarItem>
+        
+    </Shell.MenuBarItems>
+
     <TabBar>
 
         <Tab Title="Home">
@@ -14,11 +39,11 @@
         </Tab>
 
         <Tab Title="Verlauf">
-            <ShellContent ContentTemplate="{DataTemplate views:MainPage}" />
+            <ShellContent ContentTemplate="{DataTemplate views:LocalizationPage}" />
         </Tab>
 
         <Tab Title="Einstellungen">
-            <ShellContent ContentTemplate="{DataTemplate views:MainPage}" />
+            <ShellContent ContentTemplate="{DataTemplate views:LocalizationPage}" />
         </Tab>
 
     </TabBar>
