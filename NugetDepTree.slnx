@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="source/NugetDepTree.Desktop/NugetDepTree.Desktop.csproj" />
+  <Project Path="source/NugetDepTree/NugetDepTree.csproj" />
+</Solution>
