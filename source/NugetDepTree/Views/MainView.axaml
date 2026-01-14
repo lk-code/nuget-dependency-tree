@@ -38,11 +38,19 @@
 				  Padding="4"
 				  FontSize="12"
 				  HorizontalAlignment="Stretch"
-				  VerticalAlignment="Stretch">
+				  VerticalAlignment="Stretch"
+				  IsExpanded="True">
 
-			<TextBox Height="200"
-					 Text="{Binding Log}"
-					 IsReadOnly="True" />
+			<ScrollViewer VerticalScrollBarVisibility="Auto">
+				<TextBox Height="200"
+						 Text="{Binding Log}"
+						 CaretIndex="{Binding LogCaretIndex}"
+						 IsReadOnly="True"
+						 AcceptsReturn="True"
+						 TextWrapping="Wrap"
+						 FontFamily="Consolas,Courier New,monospace"
+						 FontSize="11" />
+			</ScrollViewer>
 
 		</Expander>
 
