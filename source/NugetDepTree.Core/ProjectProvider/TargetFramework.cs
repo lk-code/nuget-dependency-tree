@@ -1,7 +1,9 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.Diagnostics;
+using System.Text.RegularExpressions;
 
 namespace NugetDepTree.Core.ProjectProvider;
 
+[DebuggerDisplay("{nameof(TargetFramework)} is {VersionValue}")]
 public partial class TargetFramework(string targetFrameworkValue)
 {
     public string VersionValue { get; init; } = targetFrameworkValue;

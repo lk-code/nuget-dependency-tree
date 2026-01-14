@@ -1,5 +1,6 @@
 ﻿using NugetDepTree.Core.Contracts;
 using NugetDepTree.Core.Exceptions;
+using NugetDepTree.Core.Extensions;
 using System.Xml.Linq;
 
 namespace NugetDepTree.Core.ProjectProvider;
@@ -52,11 +53,10 @@ public class DotNetCoreProjectProvider : IProjectProvider
                 .FirstOrDefault(e => e.Name.LocalName == "TargetFrameworks"))
             .FirstOrDefault(tf => tf != null)?
             .Value;
-
         if (targetFrameworkVersions is not null)
             return targetFrameworkVersions.Split(";")
                 .Select(x => x.Trim())
-                .OrderBy(x => Version.Parse(x[3..]))
+                .OrderByTargetFramework()
                 .ToArray();
 
         return [];
