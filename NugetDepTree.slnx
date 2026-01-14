@@ -1,4 +1,6 @@
 <Solution>
+  <Project Path="source/NugetDepTree.Core/NugetDepTree.Core.csproj" Id="ef5b31e0-5c74-460b-a65e-ed170869e09a" />
   <Project Path="source/NugetDepTree.Desktop/NugetDepTree.Desktop.csproj" />
+  <Project Path="source/NugetDepTree.Tests/NugetDepTree.Tests.csproj" Id="56b1e208-7456-4a9f-80ea-eb162b109da9" />
   <Project Path="source/NugetDepTree/NugetDepTree.csproj" />
 </Solution>
